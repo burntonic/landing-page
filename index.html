@@ -8,7 +8,7 @@
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
   <script src="/_sdk/element_sdk.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&amp;family=Montserrat:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
   <script>
     tailwind.config = {
       theme: {
@@ -40,8 +40,8 @@
   </script>
   <style>
     html { height: 100%; }
-    body { height: 100%; margin: 0; font-family: 'DM Sans', sans-serif; }
-    .font-display { font-family: 'Playfair Display', serif; }
+    body { height: 100%; margin: 0; font-family: 'Montserrat', sans-serif; }
+    .font-display { font-family: 'Merriweather', serif; font-weight: 700; }
     .app-shell { height: 100%; overflow-y: auto; overflow-x: hidden; }
 
     /* Animations */
@@ -193,17 +193,8 @@
        </div>
        <div class="flex items-center gap-6 mt-8 justify-center md:justify-start animate-fade-up delay-500 text-sm">
         <div class="flex items-center gap-2">
-         <div class="flex -space-x-1">
-          <div class="w-5 h-5 rounded-full bg-yellow-400 flex items-center justify-center"><i data-lucide="star" style="width:12px;height:12px;color:#fff;"></i>
-          </div>
-          <div class="w-5 h-5 rounded-full bg-yellow-400 flex items-center justify-center"><i data-lucide="star" style="width:12px;height:12px;color:#fff;"></i>
-          </div>
-          <div class="w-5 h-5 rounded-full bg-yellow-400 flex items-center justify-center"><i data-lucide="star" style="width:12px;height:12px;color:#fff;"></i>
-          </div>
-          <div class="w-5 h-5 rounded-full bg-yellow-400 flex items-center justify-center"><i data-lucide="star" style="width:12px;height:12px;color:#fff;"></i>
-          </div>
-          <div class="w-5 h-5 rounded-full bg-yellow-400 flex items-center justify-center"><i data-lucide="star" style="width:12px;height:12px;color:#fff;"></i>
-          </div>
+         <div class="flex gap-1">
+          <i data-lucide="star" style="width:18px;height:18px;color:#fbbf24;fill:#fbbf24;"></i> <i data-lucide="star" style="width:18px;height:18px;color:#fbbf24;fill:#fbbf24;"></i> <i data-lucide="star" style="width:18px;height:18px;color:#fbbf24;fill:#fbbf24;"></i> <i data-lucide="star" style="width:18px;height:18px;color:#fbbf24;fill:#fbbf24;"></i> <i data-lucide="star" style="width:18px;height:18px;color:#fbbf24;fill:#fbbf24;"></i>
          </div><span class="text-blue-100">4.9/5 • 12,000+ Happy Customers</span>
         </div>
        </div>
@@ -498,7 +489,7 @@
       text_color: '#0f172a',
       primary_action_color: '#1a6fc4',
       secondary_action_color: '#475569',
-      font_family: 'DM Sans',
+      font_family: 'Sora',
       font_size: 16,
       hero_headline: 'Unlock Faster Muscle Recovery & Energy With This Advanced Amino Formula',
       hero_subheadline: 'Scientifically designed with 8 essential amino acids to support muscle growth and performance.',
@@ -536,7 +527,7 @@
         el.style.color = c.primary_action_color;
       });
 
-      const fontStack = `${c.font_family}, 'DM Sans', sans-serif`;
+      const fontStack = `${c.font_family}, 'Montserrat', sans-serif`;
       document.body.style.fontFamily = fontStack;
 
       const setTextById = (id, val) => { const el = document.getElementById(id); if (el) el.textContent = val; };
@@ -621,12 +612,7 @@
 
     document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
 
-    document.getElementById('hero-cta-btn').addEventListener('click', () => {
-      const nextSection = document.querySelector('#hero-section').nextElementSibling;
-      if (nextSection) nextSection.scrollIntoView({ behavior: 'smooth' });
-    });
-
     lucide.createIcons();
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9e2561be131333ea',t:'MTc3NDUxOTk5Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9e267147b59e2543',t:'MTc3NDUzMTExOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
